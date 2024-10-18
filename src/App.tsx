@@ -1,25 +1,52 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaLinkedinIn } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import ProjectCard from "./components/ProjectCard";
+
+type Project = {
+  title: string;
+  description: string;
+};
 
 export default function App() {
+  const [projects, setProjects] = useState<Project[]>([]);
+
   const navLinks: { title: string; id: string }[] = [
     { title: "Projects", id: "projects" },
-    { title: "Skills", id: "skills" },
     { title: "Contact", id: "contact" },
   ];
 
-  const heroContactLinks: { icon: React.ReactNode; href: string }[] = [
+  const heroContactLinks: {
+    icon: React.ReactNode;
+    title: string;
+    href: string;
+  }[] = [
     {
       icon: <FaLinkedinIn />,
+      title: "Owen Hammond",
       href: "https://www.linkedin.com/in/owen-hammond-889432274/",
     },
-    { icon: <MdEmail />, href: "mailto:owenhammond8@gmail.com" },
+    {
+      icon: <MdEmail />,
+      title: "owenhammond8@gmail.com",
+      href: "mailto:owenhammond8@gmail.com",
+    },
   ];
 
+  useEffect(() => {
+    const fetchProjects = async () => {
+      await fetch("./projects.json")
+        .then((res) => res.json())
+        .then((data) => setProjects(data))
+        .catch((err) => console.error("Error fetching projects", err));
+    };
+
+    fetchProjects();
+  }, []);
+
   return (
-    <main className="w-full h-screen bg-background text-text">
-      <nav className="px-6 py-6 flex justify-between items-center text-white">
+    <main className="w-full min-h-screen h-full py-8 flex flex-col items-center bg-background text-text">
+      <nav className="px-6 pb-6 w-full flex justify-between items-center text-white">
         <h2>Owen Hammond</h2>
 
         <ul className="flex gap-5">
@@ -33,56 +60,122 @@ export default function App() {
         </ul>
       </nav>
 
-      <section id="hero" className="m-14">
-        <div className="space-y-14">
-          <div className="space-y-3">
-            <h3>Hello, I'm</h3>
+      <div className="w-[80vw] min-w-[650px]">
+        <section id="hero">
+          <div className="space-y-14">
+            <div className="space-y-3">
+              <h3>Hello, I'm</h3>
 
-            <h1 className="text-4xl font-semibold text-white tracking-wide">
-              <span className="text-primary">Owen</span> Hammond
-            </h1>
+              <h1 className="text-4xl font-semibold text-white tracking-wide">
+                <span className="text-primary">Owen</span> Hammond
+              </h1>
 
-            <h2 className="text-white tracking-wide text-2xl">
-              Experienced Mechanical Engineer |
-            </h2>
-          </div>
-
-          <p className="max-w-[550px] leading-[2]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nam
-            iste libero aut doloribus quis earum incidunt repudiandae quia
-            asperiores vero dicta dolor sint, eius laboriosam, natus tempore
-            esse voluptatem!
-          </p>
-
-          <div className="space-y-6">
-            <div className="space-x-4">
-              <button className="px-4 py-3 bg-primary rounded-lg text-white">
-                Download Resume
-              </button>
-
-              <button className="px-4 py-3 border-2 border-primary rounded-lg">
-                Contact Me
-              </button>
+              <h2 className="text-white tracking-wide text-2xl">
+                Experienced Mechanical Engineer
+              </h2>
             </div>
 
-            <ul className="flex gap-x-3">
-              {heroContactLinks.map((link, i) => {
-                return (
-                  <li key={i} className="bg-foreground p-2 rounded">
-                    <a
-                      href={link.href}
-                      target="_blank"
-                      className="text-primary"
-                    >
-                      {link.icon}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
+            <p className="max-w-[550px] leading-[2]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nam
+              iste libero aut doloribus quis earum incidunt repudiandae quia
+              asperiores vero dicta dolor sint, eius laboriosam, natus tempore
+              esse voluptatem!
+            </p>
+
+            <div className="space-y-6">
+              <div className="space-x-4">
+                <button className="px-4 py-3 bg-primary rounded-lg text-white">
+                  Download Resume
+                </button>
+
+                <button className="px-4 py-3 border-2 border-foreground rounded-lg">
+                  Contact Me
+                </button>
+              </div>
+
+              <ul className="flex gap-x-3">
+                {heroContactLinks.map((link, i) => {
+                  return (
+                    <li key={i} className="bg-foreground p-2 rounded">
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        className="text-primary"
+                      >
+                        {link.icon}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Oflbho9ZG2U?start=103"
+          title="YouTube video player"
+          allow="accelerometer; 
+  autoplay; 
+  clipboard-write; 
+  encrypted-media; 
+  gyroscope; 
+  picture-in-picture; 
+  web-share"
+          allowFullScreen
+        />
+
+        <hr className="w-[75%] h-[1px] bg-text" />
+
+        <section id="projects">
+          <h2 className="text-2xl text-white tracking-wide">My Projects</h2>
+          <p className="mt-2 mb-8 max-w-[500px]">
+            These are some of the projects I've worked on. Click on a project to
+            see more details.
+          </p>
+
+          <ul className="grid gap-6 grid-cols-2">
+            {projects.map((project, i) => {
+              return (
+                <li key={i}>
+                  <ProjectCard
+                    title={project.title}
+                    description={project.description}
+                  />
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+
+        <section id="contact">
+          <h2 className="text-2xl text-white tracking-wide">Contact me</h2>
+          <p className="mt-2 mb-8 max-w-[500px]">
+            You can reach me at the following links.
+          </p>
+
+          <ul className="flex flex-col gap-y-4">
+            {heroContactLinks.map((link, i) => {
+              return (
+                <li key={i}>
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    className="inline-flex items-center gap-x-3 pl-2 pr-6 py-3 border-2 rounded-lg border-foreground"
+                  >
+                    <span className="bg-foreground p-[6px] rounded">
+                      {link.icon}
+                    </span>
+                    <span>{link.title}</span>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      </div>
     </main>
   );
 }

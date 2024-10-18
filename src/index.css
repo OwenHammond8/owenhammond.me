@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: #3498db;
+  --dark-primary: #184c6f;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: sans-serif;
+}
+
+section:not(:last-child) {
+  @apply my-20;
+}
+
+section:last-child {
+  @apply mt-20;
+}
+
+.background-primary-gradient {
+  position: relative;
+  background: linear-gradient(-70deg, var(--dark-primary), var(--primary));
 }
