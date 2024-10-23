@@ -1,10 +1,7 @@
 [
   {
     "title": "Robotic Arm",
-    "description": "Designed and build a robotic arm that can pick up objects. Controlled by an electrical control panel."
-  },
-  {
-    "title": "Automated Mechanical System",
-    "description": "Designed and build a mechanical system that sorts, picks, places and presses parts."
+    "description": "Designed and build a robotic arm that can pick up objects. Controlled by an electrical control panel.",
+    "url": "https://www.youtube.com/embed/nI_7Oul1OTc?si=ruNW1NV9tcLFqlbc"
   }
 ]

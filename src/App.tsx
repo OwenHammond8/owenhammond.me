@@ -6,6 +6,7 @@ import ProjectCard from "./components/ProjectCard";
 type Project = {
   title: string;
   description: string;
+  url: string;
 };
 
 export default function App() {
@@ -88,9 +89,12 @@ export default function App() {
                   Download Resume
                 </button>
 
-                <button className="px-4 py-3 border-2 border-foreground rounded-lg">
+                <a
+                  href="#contact"
+                  className="px-4 py-3 border-2 border-foreground rounded-lg"
+                >
                   Contact Me
-                </button>
+                </a>
               </div>
 
               <ul className="flex gap-x-3">
@@ -112,21 +116,6 @@ export default function App() {
           </div>
         </section>
 
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/Oflbho9ZG2U?start=103"
-          title="YouTube video player"
-          allow="accelerometer; 
-  autoplay; 
-  clipboard-write; 
-  encrypted-media; 
-  gyroscope; 
-  picture-in-picture; 
-  web-share"
-          allowFullScreen
-        />
-
         <hr className="w-[75%] h-[1px] bg-text" />
 
         <section id="projects">
@@ -136,13 +125,14 @@ export default function App() {
             see more details.
           </p>
 
-          <ul className="grid gap-6 grid-cols-2">
+          <ul className="flex flex-col gap-y-4">
             {projects.map((project, i) => {
               return (
                 <li key={i}>
                   <ProjectCard
                     title={project.title}
                     description={project.description}
+                    youtubeUrl={project.url}
                   />
                 </li>
               );
