@@ -77,10 +77,8 @@ export default function App() {
             </div>
 
             <p className="max-w-[550px] leading-[2]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nam
-              iste libero aut doloribus quis earum incidunt repudiandae quia
-              asperiores vero dicta dolor sint, eius laboriosam, natus tempore
-              esse voluptatem!
+              This portfolio is in progress, projects will be added soon. In the
+              meantime, feel free to reach out to me on LinkedIn or via email.
             </p>
 
             <div className="space-y-6">
