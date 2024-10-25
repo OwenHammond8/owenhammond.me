@@ -76,16 +76,24 @@ export default function App() {
               </h2>
             </div>
 
-            <p className="max-w-[550px] leading-[2] text-lg">
-              This portfolio is in progress! Projects will be added soon. In the
-              meantime, feel free to reach out to me on LinkedIn or via email.
+            <p className="max-w-[550px] leading-[2] text-lg font-semibold">
+              This portfolio is in progress!
+            </p>
+
+            <p className="max-w-[550px] leading-[2] text-base">
+              Projects will be added soon. In the meantime, feel free to reach
+              out to me on LinkedIn or via email.
             </p>
 
             <div className="space-y-6">
               <div className="space-x-4">
-                <button className="px-4 py-3 bg-primary rounded-lg text-white">
+                <a
+                  className="px-4 py-3 bg-primary rounded-lg text-white"
+                  href="src\components\Owen_Hammond_Mechanical_Systems_Engineering_Resume.pdf"
+                  download="Owen_Hammond_Mechanical_Systems_Engineering_Resume.pdf"
+                >
                   Download Resume
-                </button>
+                </a>
 
                 <a
                   href="#contact"
