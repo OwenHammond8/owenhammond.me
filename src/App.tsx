@@ -76,7 +76,7 @@ export default function App() {
               </h2>
             </div>
 
-            <p className="max-w-[550px] leading-[3]">
+            <p className="max-w-[550px] leading-[2] text-lg">
               This portfolio is in progress! Projects will be added soon. In the
               meantime, feel free to reach out to me on LinkedIn or via email.
             </p>
