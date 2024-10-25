@@ -75,11 +75,9 @@ export default function App() {
                 Experienced Mechanical Engineer
               </h2>
             </div>
-
             <p className="max-w-[550px] leading-[2] text-lg font-semibold">
               This portfolio is in progress!
             </p>
-
             <p className="max-w-[550px] leading-[2] text-base">
               Projects will be added soon. In the meantime, feel free to reach
               out to me on LinkedIn or via email.
@@ -89,7 +87,7 @@ export default function App() {
               <div className="space-x-4">
                 <a
                   className="px-4 py-3 bg-primary rounded-lg text-white"
-                  href="src\components\Owen_Hammond_Mechanical_Systems_Engineering_Resume.pdf"
+                  href="https://drive.google.com/file/d/1rBbyLEk1V8PTvswgOPoAsk-6eozsN8o9/preview"
                   download="Owen_Hammond_Mechanical_Systems_Engineering_Resume.pdf"
                 >
                   Download Resume
