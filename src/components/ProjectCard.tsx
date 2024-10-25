@@ -12,7 +12,7 @@ export default function ProjectCard({
   description: string;
   youtubeUrl: string;
 }) {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   return (
     <div className="inline-block min-w-[500px] p-4 rounded-lg border-2 border-foreground">
