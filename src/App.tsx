@@ -29,37 +29,28 @@ export default function App() {
     },
     {
       icon: <MdEmail />,
-      title: "owenhammond8@gmail.com",
-      href: "mailto:owenhammond8@gmail.com",
+      title: "Email",
+      href: "mailto:owen@example.com",
     },
   ];
 
   useEffect(() => {
-    const fetchProjects = async () => {
-      await fetch("./projects.json")
-        .then((res) => res.json())
-        .then((data) => setProjects(data))
-        .catch((err) => console.error("Error fetching projects", err));
-    };
-
-    fetchProjects();
+    // Fetch projects data
+    fetch("/projects.json")
+      .then((res) => res.json())
+      .then((data) => setProjects(data));
   }, []);
 
   return (
     <main className="w-full min-h-screen h-full py-8 flex flex-col items-center bg-background text-text">
       <nav className="px-6 pb-6 w-full flex justify-between items-center text-white">
-        <h2 className="ml-6">Engineering Portfolio</h2>{" "}
-        {/* Add margin-left to align with the links */}
+        <h2 className="ml-6">Engineering Portfolio</h2>
         <ul className="flex gap-5 mr-6">
-          {" "}
-          {/* Add margin-right to align with the title */}
-          {navLinks.map((link, i) => {
-            return (
-              <li key={i}>
-                <a href={`#${link.id}`}>{link.title}</a>
-              </li>
-            );
-          })}
+          {navLinks.map((link, i) => (
+            <li key={i}>
+              <a href={`#${link.id}`}>{link.title}</a>
+            </li>
+          ))}
         </ul>
       </nav>
 
@@ -68,7 +59,6 @@ export default function App() {
           <div className="space-y-14">
             <div className="space-y-3">
               <h3>Hello, I'm</h3>
-
               <h1 className="text-4xl font-semibold text-white tracking-wide">
                 <span className="text-primary">Owen</span> Hammond
               </h1>
@@ -85,9 +75,6 @@ export default function App() {
                 development.
               </h3>
             </div>
-            {/* <p className="max-w-[550px] leading-[2] text-lg font-semibold">
-              This portfolio is in progress!
-            </p> */}
             <p className="max-w-[550px] leading-[2] text-base"></p>
 
             <div className="space-y-6">
