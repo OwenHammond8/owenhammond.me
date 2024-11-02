@@ -48,9 +48,11 @@ export default function App() {
   return (
     <main className="w-full min-h-screen h-full py-8 flex flex-col items-center bg-background text-text">
       <nav className="px-6 pb-6 w-full flex justify-between items-center text-white">
-        <h2>Engineering Portfolio</h2>
-
-        <ul className="flex gap-5">
+        <h2 className="ml-6">Engineering Portfolio</h2>{" "}
+        {/* Add margin-left to align with the links */}
+        <ul className="flex gap-5 mr-6">
+          {" "}
+          {/* Add margin-right to align with the title */}
           {navLinks.map((link, i) => {
             return (
               <li key={i}>
@@ -75,7 +77,7 @@ export default function App() {
                 Experienced Mechanical Systems Engineer
               </h2>
 
-              <h3 className="text-white tracking-wide text-base py-3">
+              <h3 className="text-white tracking-wide text-base py-3 max-w-[1000px]">
                 Curerently studying at Conestoga College in Year 2 of Mechanical
                 Systems Engineering. I'm a Mechanical Systems Engineer with a
                 passion for designing and building mechanical systems. I have
@@ -127,10 +129,10 @@ export default function App() {
 
         <hr className="w-[75%] h-[1px] bg-text" />
 
-        <section id="projects">
+        <section id="projects" className="projects-container">
           <h2 className="text-2xl text-white tracking-wide">Projects</h2>
           <p className="mt-2 mb-8 max-w-[500px]">
-            Here is some of the projects I've finished in the past.
+            Here is some of the projects I've completed over the years:
           </p>
 
           <ul className="flex flex-col gap-y-6">

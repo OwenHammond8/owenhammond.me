@@ -1,13 +1,19 @@
 [
   {
     "title": "Automated Work Cell | 2024",
-    "description": "Designed and build a robotic arm that can pick up objects. Controlled by an electrical control panel.",
-    "url": "https://www.youtube.com/embed/nI_7Oul1OTc?si=ruNW1NV9tcLFqlbc"
+    "description": "Currently working on our Year 2 project, a automated work cell. This project has required us to design and build a work cell that can perform a task. The work cell is controlled by a PLC and has a HMI for user interaction.",
+    "url": [
+      "https://lh3.googleusercontent.com/pw/AP1GczPqqi4a0pCz8DPaEStjlGdHkp_Do6RAP4I_1AVM-5b0LLl9kLWDVb58j8o6-jrdAiAUNqyHBPBk-6ibZovWLzlI31lpg3qkQReAqksvvWxQRBTl_O79=w2400",
+      "https://lh3.googleusercontent.com/pw/AP1GczNO7PoUE9Ou2mcbJQEfJmV45fxscLZRxtggKvF-HapFciQvv7OzbjQ-Ml-0PbhzgKj0Y-O-AotLQeBdWJ_AWyiCNI-TvhVK2nThpTFqJD01HnXIZXyl=w2400"
+    ]
   },
   {
     "title": "Robotic Arm | 2023",
     "description": "Designed and build a robotic arm that can pick up objects. Controlled by an electrical control panel.",
-    "url": "https://www.youtube.com/embed/nI_7Oul1OTc?si=ruNW1NV9tcLFqlbc"
+    "url": [
+      "https://www.youtube.com/embed/nI_7Oul1OTc?si=ruNW1NV9tcLFqlbc",
+      "https://www.youtube.com/embed/nI_7Oul1OTc?si=ruNW1NV9tcLFqlbc"
+    ]
   },
   {
     "title": "Robotic Arm | 2023",
