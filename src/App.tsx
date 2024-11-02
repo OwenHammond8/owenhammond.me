@@ -41,6 +41,16 @@ export default function App() {
       .then((data) => setProjects(data));
   }, []);
 
+  const handleResumeDownload = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
+    e.preventDefault();
+    window.open(
+      "https://drive.google.com/file/d/1rBbyLEk1V8PTvswgOPoAsk-6eozsN8o9/preview",
+      "owenhammond.me/resume"
+    );
+  };
+
   return (
     <main className="w-full min-h-screen h-full py-8 flex flex-col items-center bg-background text-text">
       <nav className="px-6 pb-6 w-full flex justify-between items-center text-white">
@@ -68,7 +78,7 @@ export default function App() {
               </h2>
 
               <h3 className="text-white tracking-wide text-base py-3 max-w-[1000px]">
-                Curerently studying at Conestoga College in Year 2 of Mechanical
+                Currently studying at Conestoga College in Year 2 of Mechanical
                 Systems Engineering. I'm a Mechanical Systems Engineer with a
                 passion for designing and building mechanical systems. I have
                 experience in mechanical design, project management, and product
@@ -81,8 +91,8 @@ export default function App() {
               <div className="space-x-4">
                 <a
                   className="px-4 py-3 bg-primary rounded-lg text-white"
-                  href="https://drive.google.com/file/d/1rBbyLEk1V8PTvswgOPoAsk-6eozsN8o9/preview"
-                  download="Owen_Hammond_Mechanical_Systems_Engineering_Resume.pdf"
+                  href="#"
+                  onClick={handleResumeDownload}
                 >
                   Download Resume
                 </a>
@@ -94,22 +104,6 @@ export default function App() {
                   Contact Me
                 </a>
               </div>
-
-              <ul className="flex gap-x-3">
-                {heroContactLinks.map((link, i) => {
-                  return (
-                    <li key={i} className="bg-foreground p-2 rounded">
-                      <a
-                        href={link.href}
-                        target="_blank"
-                        className="text-primary"
-                      >
-                        {link.icon}
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
             </div>
           </div>
         </section>
