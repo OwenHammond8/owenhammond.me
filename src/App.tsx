@@ -48,7 +48,7 @@ export default function App() {
   return (
     <main className="w-full min-h-screen h-full py-8 flex flex-col items-center bg-background text-text">
       <nav className="px-6 pb-6 w-full flex justify-between items-center text-white">
-        <h2>Owen Hammond</h2>
+        <h2>Engineering Portfolio</h2>
 
         <ul className="flex gap-5">
           {navLinks.map((link, i) => {
@@ -72,16 +72,21 @@ export default function App() {
               </h1>
 
               <h2 className="text-white tracking-wide text-2xl">
-                Experienced Mechanical Engineer
+                Experienced Mechanical Systems Engineer
               </h2>
+
+              <h3 className="text-white tracking-wide text-base py-3">
+                Curerently studying at Conestoga College in Year 2 of Mechanical
+                Systems Engineering. I'm a Mechanical Systems Engineer with a
+                passion for designing and building mechanical systems. I have
+                experience in mechanical design, project management, and product
+                development.
+              </h3>
             </div>
-            <p className="max-w-[550px] leading-[2] text-lg font-semibold">
+            {/* <p className="max-w-[550px] leading-[2] text-lg font-semibold">
               This portfolio is in progress!
-            </p>
-            <p className="max-w-[550px] leading-[2] text-base">
-              Projects will be added soon. In the meantime, feel free to reach
-              out to me on LinkedIn or via email.
-            </p>
+            </p> */}
+            <p className="max-w-[550px] leading-[2] text-base"></p>
 
             <div className="space-y-6">
               <div className="space-x-4">
@@ -123,13 +128,12 @@ export default function App() {
         <hr className="w-[75%] h-[1px] bg-text" />
 
         <section id="projects">
-          <h2 className="text-2xl text-white tracking-wide">My Projects</h2>
+          <h2 className="text-2xl text-white tracking-wide">Projects</h2>
           <p className="mt-2 mb-8 max-w-[500px]">
-            These are some of the projects I've worked on. Click on a project to
-            see more details.
+            Here is some of the projects I've finished in the past.
           </p>
 
-          <ul className="flex flex-col gap-y-4">
+          <ul className="flex flex-col gap-y-6">
             {projects.map((project, i) => {
               return (
                 <li key={i}>
@@ -147,7 +151,7 @@ export default function App() {
         <section id="contact">
           <h2 className="text-2xl text-white tracking-wide">Contact me</h2>
           <p className="mt-2 mb-8 max-w-[500px]">
-            You can reach me at the following links.
+            You can reach me at the following links:
           </p>
 
           <ul className="flex flex-col gap-y-4">
