@@ -79,10 +79,9 @@ export default function App() {
 
               <h3 className="text-white tracking-wide text-base py-3 max-w-[1000px]">
                 Currently studying at Conestoga College in Year 2 of Mechanical
-                Systems Engineering. I'm a Mechanical Systems Engineer with a
-                passion for designing and building mechanical systems. I have
-                experience in mechanical design, project management, and product
-                development.
+                Systems Engineering. I have experience in mechanical design,
+                project management, and product development. This website is
+                dedicated to showcasing my projects over the years.
               </h3>
             </div>
             <p className="max-w-[550px] leading-[2] text-base"></p>
@@ -112,8 +111,8 @@ export default function App() {
 
         <section id="projects" className="projects-container">
           <h2 className="text-2xl text-white tracking-wide">Projects</h2>
-          <p className="mt-2 mb-8 max-w-[500px]">
-            Here is some of the projects I've completed over the years:
+          <p className="mt-4 mb-8 max-w-[500px]">
+            Please find each of my projects below.
           </p>
 
           <ul className="flex flex-col gap-y-6">
