@@ -23,14 +23,14 @@ export default function App() {
     href: string;
   }[] = [
     {
-      icon: <FaLinkedinIn />,
-      title: "Owen Hammond",
-      href: "https://www.linkedin.com/in/owen-hammond-889432274/",
-    },
-    {
       icon: <MdEmail />,
       title: "Email",
       href: "mailto:owen@example.com",
+    },
+    {
+      icon: <FaLinkedinIn />,
+      title: "LinkedIn",
+      href: "https://www.linkedin.com/in/owen-hammond-889432274/",
     },
   ];
 
@@ -111,8 +111,9 @@ export default function App() {
 
         <section id="projects" className="projects-container">
           <h2 className="text-2xl text-white tracking-wide">Projects</h2>
-          <p className="mt-4 mb-8 max-w-[500px]">
-            Please find each of my projects below.
+          <p className="mt-4 mb-8 max-w-screen-full">
+            Please find projects I've completed over the years below. Click the
+            dropdown to view more details.
           </p>
 
           <ul className="flex flex-col gap-y-6">
