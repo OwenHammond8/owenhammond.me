@@ -12,7 +12,7 @@ export default function ProjectCard({
   description: string;
   youtubeUrl: string | string[];
 }) {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   const youtubeUrls = Array.isArray(youtubeUrl) ? youtubeUrl : [youtubeUrl];
 

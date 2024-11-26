@@ -1,19 +1,18 @@
 [
   {
-    "title": "Automated Work Cell",
+    "title": "Bluewater Design",
+    "description": "Founded Bluewater Design in May 2022, a company that sells functional pieces of art. While active, Bluewater Design achived a large social media following and professional branding. Near the end of operations, Bluewater Design brought in rougly $6500 in revenue over a short period of time. The company was dissolved in Janurary 2023.",
+    "url": [
+      "https://lh3.googleusercontent.com/pw/AP1GczP6tWIrcjKnsqCSJtY1PWUyXZlh1RjR13hRgBRI0duCF7olHFSM7vS-zz3hZ1MGgxZB0taXliJ2vv02OtNOqD60lsJ6CeSPr3p0Weq5H7H2GRgawW6n=w2400",
+      "https://www.youtube.com/embed/D96q_4XaCu0?si=51cFqPrrecI6QrHF&amp;controls=0"
+    ]
+  },
+  {
+    "title": "Project Here",
     "description": "Currently working on our Year 2 project, a automated work cell. This project has required us to design and build a work cell that can perform a task. The work cell is controlled by a PLC and has a HMI for user interaction.",
     "url": [
       "https://lh3.googleusercontent.com/pw/AP1GczPqqi4a0pCz8DPaEStjlGdHkp_Do6RAP4I_1AVM-5b0LLl9kLWDVb58j8o6-jrdAiAUNqyHBPBk-6ibZovWLzlI31lpg3qkQReAqksvvWxQRBTl_O79=w2400",
       "https://lh3.googleusercontent.com/pw/AP1GczNO7PoUE9Ou2mcbJQEfJmV45fxscLZRxtggKvF-HapFciQvv7OzbjQ-Ml-0PbhzgKj0Y-O-AotLQeBdWJ_AWyiCNI-TvhVK2nThpTFqJD01HnXIZXyl=w2400"
-    ]
-  },
-  {
-    "title": "Robotic Arm",
-    "description": "Designed and build a robotic arm that can pick up objects. Controlled by an electrical control panel.",
-    "url": [
-      "https://www.youtube.com/embed/nI_7Oul1OTc?si=ruNW1NV9tcLFqlbc",
-      "https://lh3.googleusercontent.com/pw/AP1GczPqqi4a0pCz8DPaEStjlGdHkp_Do6RAP4I_1AVM-5b0LLl9kLWDVb58j8o6-jrdAiAUNqyHBPBk-6ibZovWLzlI31lpg3qkQReAqksvvWxQRBTl_O79=w2400",
-      "https://lh3.googleusercontent.com/pw/AP1GczPqqi4a0pCz8DPaEStjlGdHkp_Do6RAP4I_1AVM-5b0LLl9kLWDVb58j8o6-jrdAiAUNqyHBPBk-6ibZovWLzlI31lpg3qkQReAqksvvWxQRBTl_O79=w2400"
     ]
   }
 ]
