@@ -52,8 +52,8 @@ export default function App() {
   };
 
   return (
-    <main className="w-full min-h-screen h-full py-8 flex flex-col items-center bg-background text-text">
-      <nav className="px-6 pb-6 w-full flex justify-between items-center text-white">
+    <main className="w-full min-h-screen h-full flex flex-col items-center bg-background text-text">
+      <nav className="px-8 pt-8 pb-8 w-full flex justify-between items-center text-white bg-[#141414]">
         <h2 className="ml-6">Engineering Portfolio</h2>
         <ul className="flex gap-5 mr-6">
           {navLinks.map((link, i) => (
@@ -74,7 +74,7 @@ export default function App() {
               </h1>
 
               <h2 className="text-white tracking-wide text-2xl">
-                Experienced Mechanical Systems Engineer
+                Mechanical Systems Engineering Student
               </h2>
 
               <h3 className="text-white tracking-wide text-base py-3 max-w-[1000px]">
@@ -112,8 +112,8 @@ export default function App() {
         <section id="projects" className="projects-container">
           <h2 className="text-2xl text-white tracking-wide">Projects</h2>
           <p className="mt-4 mb-8 max-w-screen-full">
-            Please find projects I've completed over the years below. Click the
-            dropdown to view more details.
+            Please find projects I've completed over the years below. Please
+            feel free to click on a image or video to see more details.
           </p>
 
           <ul className="flex flex-col gap-y-6">
