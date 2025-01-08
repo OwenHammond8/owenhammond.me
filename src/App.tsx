@@ -52,7 +52,7 @@ export default function App() {
   };
 
   return (
-    <main className="w-full min-h-screen h-full flex flex-col items-center bg-background text-text">
+    <main className="w-full min-h-screen h-full flex flex-col items-center bg-background text-text overflow-hidden">
       <nav className="px-8 pt-8 pb-8 w-full flex justify-between items-center text-white bg-[#141414]">
         <h2 className="ml-6">Engineering Portfolio</h2>
         <ul className="flex gap-5 mr-6 ">
