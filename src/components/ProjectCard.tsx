@@ -38,9 +38,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       {isExpanded && (
         <>
           <p className="mb-6">{description}</p>
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
             {youtubeUrls.map((url, index) => (
-              <div key={index} className="relative w-full pb-[56.25%] h-0">
+              <div key={index} className="relative md:w-full pb-[56.25%] h-0">
                 {url.includes("youtube.com") ? (
                   <iframe
                     className="absolute top-0 left-0 w-full h-full rounded-lg"

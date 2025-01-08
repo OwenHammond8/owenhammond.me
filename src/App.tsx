@@ -55,7 +55,7 @@ export default function App() {
     <main className="w-full min-h-screen h-full flex flex-col items-center bg-background text-text">
       <nav className="px-8 pt-8 pb-8 w-full flex justify-between items-center text-white bg-[#141414]">
         <h2 className="ml-6">Engineering Portfolio</h2>
-        <ul className="flex gap-5 mr-6">
+        <ul className="flex gap-5 mr-6 ">
           {navLinks.map((link, i) => (
             <li key={i}>
               <a href={`#${link.id}`}>{link.title}</a>
@@ -64,7 +64,7 @@ export default function App() {
         </ul>
       </nav>
 
-      <div className="w-[80vw] min-w-[650px]">
+      <div className="w-[80vw] min-w-screen-[80%]">
         <section id="hero">
           <div className="space-y-14">
             <div className="space-y-3">
