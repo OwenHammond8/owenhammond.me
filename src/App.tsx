@@ -79,9 +79,9 @@ export default function App() {
 
               <h3 className="text-white tracking-wide text-base py-3 max-w-[1000px]">
                 Currently studying at Conestoga College in Year 2 of Mechanical
-                Systems Engineering. I have experience in mechanical design,
-                project management, and product development. This website is
-                dedicated to showcasing my projects over the years.
+                Systems Engineering (BEng). I have experience in mechanical
+                design, project management, product development and more. This
+                website is dedicated to showcasing my projects over the years.
               </h3>
             </div>
             <p className="max-w-[550px] leading-[2] text-base"></p>
