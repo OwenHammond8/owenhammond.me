@@ -64,7 +64,7 @@ export default function App() {
         </ul>
       </nav>
 
-      <div className="w-[80vw] min-w-screen-[80%]">
+      <div className="w-[80vw] min-w-screen-[80%] pb-12">
         <section id="hero">
           <div className="space-y-14">
             <div className="space-y-3">
