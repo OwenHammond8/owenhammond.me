@@ -68,7 +68,7 @@ export default function App() {
         <section id="hero">
           <div className="space-y-14">
             <div className="space-y-3">
-              <h3>Hello, I'm</h3>
+              <h2>Hello, I'm</h2>
               <h1 className="text-4xl font-semibold text-white tracking-wide">
                 <span className="text-primary">Owen</span> Hammond
               </h1>
