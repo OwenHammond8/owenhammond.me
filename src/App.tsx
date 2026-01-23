@@ -42,12 +42,12 @@ export default function App() {
   }, []);
 
   const handleResumeDownload = (
-    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
   ) => {
     e.preventDefault();
     window.open(
       "https://drive.google.com/file/d/1rBbyLEk1V8PTvswgOPoAsk-6eozsN8o9/preview",
-      "owenhammond.me/resume"
+      "owenhammond.me/resume",
     );
   };
 
@@ -78,10 +78,10 @@ export default function App() {
               </h2>
 
               <h3 className="text-white tracking-wide text-base py-3 max-w-[1000px]">
-                Currently studying at Conestoga College in Year 2 of Mechanical
-                Systems Engineering (BEng). I have experience in mechanical
-                design, project management, product development and more. This
-                website is dedicated to showcasing my projects over the years.
+                Year 3 Engineering student (BEng) at Conestoga College. I have
+                experience in mechanical design, project management, product
+                development and more. This website is dedicated to showcasing my
+                projects over the years.
               </h3>
             </div>
             <p className="max-w-[550px] leading-[2] text-base"></p>
