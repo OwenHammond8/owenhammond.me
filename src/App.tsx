@@ -46,7 +46,7 @@ export default function App() {
   ) => {
     e.preventDefault();
     window.open(
-      "https://drive.google.com/file/d/1rBbyLEk1V8PTvswgOPoAsk-6eozsN8o9/preview",
+      "https://drive.google.com/file/d/1bmQVLuMFLLzVe5ckGEaadOlA7FVjdnsR/preview",
       "owenhammond.me/resume",
     );
   };
