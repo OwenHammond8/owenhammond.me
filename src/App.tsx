@@ -25,7 +25,7 @@ export default function App() {
     {
       icon: <MdEmail />,
       title: "Email",
-      href: "mailto:owen@example.com",
+      href: "mailto:owenhammond8@gmail.com",
     },
     {
       icon: <FaLinkedinIn />,
