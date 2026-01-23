@@ -112,8 +112,7 @@ export default function App() {
         <section id="projects" className="projects-container">
           <h2 className="text-2xl text-white tracking-wide">Projects</h2>
           <p className="mt-4 mb-8 max-w-screen-full">
-            Please find projects I've completed over the years below. Please
-            feel free to click on a image or video to see more details.
+            To see an image or video larger, please click on it.
           </p>
 
           <ul className="flex flex-col gap-y-6">
